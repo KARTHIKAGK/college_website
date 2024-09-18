@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animated Content</title>
+</head>
+<body>
+    <header style="background-color: #333; color: #fff; padding: 10px 20px; text-align: center;">
+        <h1>About Our College</h1></header>
+    <div class="content">
+        <p style=" color: black;">St. Xavier’s Catholic College of Engineering (Autonomous) vibrates with the vision of ‘Creating a Technically Empowered Humane Society’ by offering cutting edge technical and managerial education to the rural youth of Tamil Nadu and beyond. St. Xavier's Catholic College of Engineering is conferred with Autonomous Status from the academic year 2022-2023 for the next 10 years by UGC. St. Xavier's Catholic College of Engineering has seven undergraduate programmes (CSE, IT, ECE, EEE, CIVIL, MECHANICAL and AI&DS) and eight postgraduate Programmes including MCA and MBA, besides eight University recognized research departments (CSE, ECE, EEE, CIVIL, MECHANICAL, IT, MCA and PHYSICS). All the Programmes are approved by All India Council of Technical Education (AICTE) and all the UG and MBA programmes have permanent affiliation of the Anna University, Chennai.
+        </p>
+        <table style="table-layout: fixed; width: 100%;">
+            <tr>
+                <td>
+                    <img style="animation: slideIn 1s ease-in-out forwards; transform: translateX(-100%); width: 90%; height: 20%;" src="clgoverview.jpg" alt="Description of the image">
+                </td>
+                <td>
+                    <img style="width: 100%; height: 30%;" src="corres.jpg" alt="Description of the second image">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <a href="home_page.html" class="back-button" style="display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;">Back to Home</a>
+
+    <style>
+        /* Fade-in animation for paragraphs */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Slide-in animation for images */
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+    </style>
+    <script>
+         var currentImageIndex = 0;
+
+    
+document.getElementById("backButton").addEventListener("click", function(event) {
+    event.preventDefault();
+    changeCollegeInfo();
+});
+
+    </script>
+</body>
+</html>

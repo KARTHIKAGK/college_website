@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: changeColor 10s infinite alternate;
+        }
+
+        nav ul {
+            
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        
+
+        
+        .logo {
+            text-align: center;
+            margin-top: 20px; 
+            /* Adjust the margin as needed */
+        }
+
+       
+        @keyframes changeColor {
+            0% { background-color: #ca0808; } /* Red */
+            25% { background-color: #00ff00; } /* Green */
+            50% { background-color: #0000ff; } /* Blue */
+            75% { background-color: #e4e41f; } /* Yellow */
+            100% { background-color: #ff00ff; } /* Magenta */
+        }
+       
+
+       
+        .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Adjust padding as needed */
+}
+
+        .hotspot {
+            flex: 1;
+            margin:  20px;
+            padding:  10px;
+            background-color: hsla(338, 89%, 26%, 0.959);
+            color: white;
+            cursor: pointer;
+            width:auto;
+            height: 5%;
+            text-align: center;
+        }
+        .hotspot:hover {
+            background-color: #034325;}
+            .my-image {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+}
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.text-container {
+    flex: 1; /* This will make the text container take up the available space */
+    padding-right: 20px; 
+    font-size: large;/* Add some padding to the right of the text for spacing */
+}
+
+.right-image {
+    flex: 1; /* This will make the image container take up the available space */
+    width: 10%; /* Ensure the image does not exceed its container */
+    height: 5%; /* Maintain the aspect ratio */
+}
+    </style>
+</head>
+<body>a
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Innovation</a></li>
+            <li><a href="#">Startup</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+<div class="logo">
+    <img src="clg logo.png" alt="Your Logo">
+</div>
+
+<section class="content">
+    <div class="hotspot" onclick="location.href='about.html';">About us</div>
+    <div class="hotspot" onclick="location.href='acad.html';">Academics</div>
+    <div class="hotspot" onclick="location.href='third_hotspot_url';">Examination</div></section>
+    <img src="Admissions_Slide03new.jpg.jpg" alt="Description of the image" class="my-image">
+    <div class="content-container">
+        <div class="text-container">
+            <h2>St. Xavier’s Catholic College of Engineering</h2>
+            <h3>College in Tamil Nadu</h3>
+            <p>St. Xavier's Catholic College of Engineering is an Autonomous institution which is owned, administered and run by the Roman Catholic Diocese of Kuzhithurai. Rev. Dr. M. Maria William is the current Correspondent of the college. It was established in  1998 by the Roman Catholic Diocese of Kottar. Wikipedia</p>
+            <p>Address: Chunkankadai, Nagercoil, Tamil Nadu  629003</p>
+            <p>Hours:</p>
+            <p>Open  ⋅ Closes  5 pm</p>
+            <p>Phone:  04652  232  560</p>
+            <p>Founded:  1998</p>
+            <p>Accredited with ‘A’ Grade by National Assessment and Accreditation Council NAAC up to December 2027.
+                We are the only Engineering College in the Kanyakumari District to get accredited with 'A' Grade by NAAC.</p>
+        
+        <p>All UG Programs EEE, ECE & ME [Ist cycle 2018-2019 to 2021-2022 and is extended up to 2024-2025], CE, CSE & IT [2021-2022 to 2023-2024] Accredited by National Board of Accreditation (NBA) [Tier-II]</p>    </div>
+        
+        <img src="twogirl.jpg" alt="Description of the image" class="right-image">
+    </div>
+<!-- Your content goes here -->
+
+</body>
+</html>
